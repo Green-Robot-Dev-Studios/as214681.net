@@ -1,6 +1,113 @@
 <html>
-    <head></head>
+    <head>
+        <style>
+            html {
+                filter: invert(1)
+            }
+
+            body {
+                image-rendering: pixelated;
+                background-image: url(http://cdn.backgroundhost.com/backgrounds/subtlepatterns/merely_cubed.png);
+                background-size: 10%;
+                -webkit-font-smoothing: none;
+                filter: invert(1);
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            h1,h2,h3,h4,h5,h6,marquee,p,a {
+                text-rendering: optimizelegibility;
+                font-weight: bold;
+                font-family: "Comic Sans";
+                color: red;
+                text-align: center;
+            }
+
+            p {
+                color: white; 
+                text-align: left; 
+                font-size: large;
+            }
+
+            marquee {
+                display: block;
+                margin: 0 auto;
+                width: 50%;
+                font-size: 3rem;
+            }
+
+            blink {
+                animation: blink 1s linear infinite;
+            }
+
+            @keyframes blink {
+                0% {
+                    opacity: 0;
+                }
+                40% {
+                    opacity: 0;
+                }
+                41% {
+                    opacity: 1;
+                }
+                99% {
+                    opacity: 1;
+                }
+                100% {
+                    opacity: 0;
+                }
+            }
+
+            .col {
+                display: block;
+                float: left;
+                width: inherit;
+                margin: 1rem;
+            }
+        </style>
+    </head>
     <body>
-        <img style="display: block; margin: 0 auto;" src="under_construction.gif" />
+        <marquee direction="left" scrolldelay="60">Always and forever</marquee>
+        <img style="display: block; margin: 0 auto;" src="assets/under_construction.gif"> </img>
+
+        <h2 style="color: white">Welcome to</h2>
+        <blink><h1 style="font-size: 7rem; margin: 0;">
+            <font color="#FF0000">A</font>
+            <font color="#FFB700">S</font>
+            <font color="#91FF00">2</font>
+            <font color="#00FF26">1</font>
+            <font color="#00FFd9">4</font>
+            <font color="#006FFF">6</font>
+            <font color="#4800FF">8</font>
+            <font color="#FF00FF">1</font>
+        </h1></blink>
+
+        <div class="col" style="width: 10%;">
+            <img src="assets/ie_logo.gif"/>
+            <img src="assets/ns_logo.gif"/>
+            <img src="assets/noframes.gif"/>
+
+            <img src="assets/7zip.gif"/>
+            <img src="assets/800x600.gif"/>
+            <img src="assets/canada.gif"/>
+            <img src="assets/debian.gif"/>
+            <img src="assets/geocities.gif"/>
+            <img src="assets/ipv6.gif"/>
+            <img src="assets/javass.gif"/>
+            <blink><img src="assets/noblink.gif"/></blink>
+            <img src="assets/nocookie.gif"/>
+            <img src="assets/notepad4.gif"/>
+            <img src="assets/sendit.gif"/>
+            <img src="assets/valid-html32.gif"/>
+        </div>
+        <div class="col">
+            <p>This site is actually under construction. Working on an online home for AS214681.</p>
+
+            <p>Or in the meantime, check out my actual websites:</p>
+            <a href="https://va3ndf.com/">Blog</a><br>
+            <a href="https://nicholasficara.dev/">Personal Site</a><br>
+
+            <a href="http://www.websitegoodies.com/guestbook.php?a=view&id=1740659">Click Here To View and Sign My Guestbook</a>
+        </div>
     </body>
 </html>
